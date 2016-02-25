@@ -15,6 +15,7 @@ p,h1,h2,h3,a {
 	-ms-transform: translateY(-5px);
 	-o-transform: translateY(-5px);
 }
+
 @media screen and (min-width: 769px){
 img{
 max-width: 100%;
@@ -102,6 +103,7 @@ width /***/:auto;　
 		height: 400px;
 		background-color: #1e1e1e;
 		margin-bottom: 40px;
+		overflow: hidden;
 	}
 
 	.content_main_visual_nav div {
@@ -297,6 +299,11 @@ width /***/:auto;　
 		padding-left: 20px;
 	}
 
+	/* page */
+	.page_content {
+		min-height: 800px;
+	}
+
 }
 
 @media screen and (max-width: 768px){
@@ -391,8 +398,9 @@ width /***/:auto;　
 	}
 
 	.content_main_visual {
-		width: 90%;
+		width: 100%;
 		margin:0 auto;
+		overflow: hidden;
 	}
 
 	#bx-pager {
@@ -601,7 +609,6 @@ width /***/:auto;　
 		text-align: center;
 		padding-left: 10px;
 	}
-
 }
 
 @media screen and (max-width:640px){
@@ -614,8 +621,9 @@ width /***/:auto;　
 		width:100%;
 	}
 	.content_main_visual {
-		width: 90%;
+		width: 100%;
 		margin:0 auto;
+		overflow: hidden;
 	}
 
 	#bx-pager {
