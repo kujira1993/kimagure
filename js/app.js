@@ -24,7 +24,7 @@ $(function(){
               wd.scroll(function() { //スクロール中の処理
                     if(wd.height() < sideArea.height()){ //サイドメニューが画面より大きい場合
                           if(starPoint < wd.scrollTop() && wd.scrollTop() + wd.height() < breakPoint){ //固定範囲内
-                                sideArea.css({"position": "fixed", "bottom": "40px"}); 
+                                sideArea.css({"position": "fixed", "bottom": "20px"}); 
                           }else if(wd.scrollTop() + wd.height() >= breakPoint){ //固定解除位置を超えた時
                                 sideArea.css({"position": "absolute", "bottom": "0"});
                           } else { //その他、上に戻った時
@@ -52,52 +52,10 @@ $(function(){
   });
 
   //スライダー処理
-  $('.content_main_visual').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: true,
-    arrows: true,
-    dots: false,
-    fade: false,
-    infinite: true,
-    asNavFor: '.content_main_visual_nav',
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-  });
-  $('.content_main_visual_nav').slick({
-    dots: true,
-    slidesToShow: 5,
-    centerMode: true,
-    focusOnSelect: true,
-    asNavFor: '.content_main_visual',
+  $(document).ready(function(){
+    $('.bxslider').bxSlider({
+      pagerCustom: '#bx-pager'
+    });
   });
 
 });
