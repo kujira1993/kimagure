@@ -588,10 +588,9 @@ width /***/:auto;　
 
 	.footer_logo {
 		width: 120px;
-		padding-left: 10px;
 		display: block;
 		float: none;
-		margin-bottom: 10px;
+		margin: 0 auto 10px;
 	}
 
 	.footer_copyright {

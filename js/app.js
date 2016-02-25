@@ -1,6 +1,6 @@
 $(function(){
 
-  $(window).load(function () {
+  $(window).scroll(function () {
         //該当のセレクタなどを代入
         var mainArea = $("#main"); //メインコンテンツ
         var sideWrap = $("#sideWrap"); //サイドバーの外枠

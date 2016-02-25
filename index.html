@@ -128,26 +128,7 @@
 	
 <!-- js -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>
-	jQuery(document).ready(function($) {
-		//PC環境の場合
-		if (window.matchMedia( '(min-width: 769px)' ).matches) {　//切り替える画面サイズ
-			$.ajax({
-				url: 'js/app.js',
-				dataType: 'script',
-				cache: false
-		   });
-		//モバイル環境の場合
-		} else {
-		    $.ajax({
-				url: 'js/sp.js',
-				dataType: 'script',
-				cache: false
-			});
-		};
-	});
-</script>
-<!-- <script type="text/javascript" src="js/app.js"></script> -->
+<script type="text/javascript" src="js/response.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
 <!-- js -->
 </body>
