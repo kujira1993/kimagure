@@ -15,6 +15,7 @@ p,h1,h2,h3,a {
 	-ms-transform: translateY(-5px);
 	-o-transform: translateY(-5px);
 }
+
 @media screen and (min-width: 769px){
 img{
 max-width: 100%;
@@ -92,7 +93,8 @@ width /***/:auto;　
 		color: #3fb3eb;
 	}
 
-	.content {
+	.content,
+	.page_content {
 		width: 960px;
 		margin: 0 auto;
 	}
@@ -102,6 +104,7 @@ width /***/:auto;　
 		height: 400px;
 		background-color: #1e1e1e;
 		margin-bottom: 40px;
+		overflow: hidden;
 	}
 
 	.content_main_visual_nav div {
@@ -297,6 +300,91 @@ width /***/:auto;　
 		padding-left: 20px;
 	}
 
+	/* page */
+	.page_content {
+		min-height: 800px;
+	}
+
+	.menu_wrap {
+		padding: 40px 20px;
+		background-image: url(../images/menu-bg.svg);
+		width: 710px;
+		box-sizing: border-box;
+    	float: left;
+	}
+
+	.menu_wrap_ttl {
+		text-align: center;
+		font-family: 'Lobster', cursive;
+		font-size: 30px;
+		font-weight: bold;
+		color: #edd900;
+		margin: 0 0 20px 180px;
+	}
+
+	.menu_wrap_ttl_time {
+		font-size: 16px;
+		padding-left: 20px;
+		color: #111;
+	}
+
+	.menu_wrap　{
+		width: 670px;
+		list-style:none;
+		padding:0;
+		margin:0;
+	}
+
+	.menu_list_wrap {
+		margin-bottom: 100px;
+	}
+
+	.menu_wrap li {
+		display:inline-block;
+		vertical-align:top;
+		width: 331px;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.menu_wrap li .menu_img {
+		width: 100%;
+		height: 170px;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+
+	.menu_wrap li .menu_img img {
+		width: 100%;
+		height: auto;
+	}
+
+	.menu_wrap li .menu_catch_copy {
+		font-size: 16px;
+		padding-bottom: 5px;
+	}
+	
+	.menu_wrap li .menu_name {
+		font-size: 20px;
+		text-align: left;
+		font-weight: bold;
+		padding-bottom: 5px;
+	}
+
+	.menu_wrap li .menu_price {
+		font-size: 18px;
+		text-align: right;
+		font-weight: bold;
+		color: #111;
+		padding-bottom: 5px;
+	}
+
+	.menu_wrap li .menu_set_price {
+		font-size: 18px;
+		text-align: right;
+		font-weight: bold;
+	}
+
 }
 
 @media screen and (max-width: 768px){
@@ -391,8 +479,9 @@ width /***/:auto;　
 	}
 
 	.content_main_visual {
-		width: 90%;
+		width: 100%;
 		margin:0 auto;
+		overflow: hidden;
 	}
 
 	#bx-pager {
@@ -588,10 +677,9 @@ width /***/:auto;　
 
 	.footer_logo {
 		width: 120px;
-		padding-left: 10px;
 		display: block;
 		float: none;
-		margin-bottom: 10px;
+		margin: 0 auto 10px;
 	}
 
 	.footer_copyright {
@@ -602,7 +690,6 @@ width /***/:auto;　
 		text-align: center;
 		padding-left: 10px;
 	}
-
 }
 
 @media screen and (max-width:640px){
@@ -615,8 +702,9 @@ width /***/:auto;　
 		width:100%;
 	}
 	.content_main_visual {
-		width: 90%;
+		width: 100%;
 		margin:0 auto;
+		overflow: hidden;
 	}
 
 	#bx-pager {
