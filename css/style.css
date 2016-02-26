@@ -93,7 +93,8 @@ width /***/:auto;　
 		color: #3fb3eb;
 	}
 
-	.content {
+	.content,
+	.page_content {
 		width: 960px;
 		margin: 0 auto;
 	}
@@ -302,6 +303,86 @@ width /***/:auto;　
 	/* page */
 	.page_content {
 		min-height: 800px;
+	}
+
+	.menu_wrap {
+		padding: 40px 20px;
+		background-image: url(../images/menu-bg.svg);
+		width: 710px;
+		box-sizing: border-box;
+    	float: left;
+	}
+
+	.menu_wrap_ttl {
+		text-align: center;
+		font-family: 'Lobster', cursive;
+		font-size: 30px;
+		font-weight: bold;
+		color: #edd900;
+		margin: 0 0 20px 180px;
+	}
+
+	.menu_wrap_ttl_time {
+		font-size: 16px;
+		padding-left: 20px;
+		color: #111;
+	}
+
+	.menu_wrap　{
+		width: 670px;
+		list-style:none;
+		padding:0;
+		margin:0;
+	}
+
+	.menu_list_wrap {
+		margin-bottom: 100px;
+	}
+
+	.menu_wrap li {
+		display:inline-block;
+		vertical-align:top;
+		width: 331px;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.menu_wrap li .menu_img {
+		width: 100%;
+		height: 170px;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+
+	.menu_wrap li .menu_img img {
+		width: 100%;
+		height: auto;
+	}
+
+	.menu_wrap li .menu_catch_copy {
+		font-size: 16px;
+		padding-bottom: 5px;
+	}
+	
+	.menu_wrap li .menu_name {
+		font-size: 20px;
+		text-align: left;
+		font-weight: bold;
+		padding-bottom: 5px;
+	}
+
+	.menu_wrap li .menu_price {
+		font-size: 18px;
+		text-align: right;
+		font-weight: bold;
+		color: #111;
+		padding-bottom: 5px;
+	}
+
+	.menu_wrap li .menu_set_price {
+		font-size: 18px;
+		text-align: right;
+		font-weight: bold;
 	}
 
 }
