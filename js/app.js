@@ -1,4 +1,4 @@
-$(function(){
+jQuery(function($) {
 
   $(window).scroll(function () {
     //該当のセレクタなどを代入
