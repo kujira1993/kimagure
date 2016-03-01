@@ -37,7 +37,7 @@
 	</div>
 	<div class="header_gnav u-cf">
 		<ul class="header_gnav_inner u-cf">
-			<li><a href="" class="header_gnav_inner_link">トップ</a></li>
+			<li><a href="<?php echo home_url('/'); ?>" class="header_gnav_inner_link">トップ</a></li>
 			<li><a href="" class="header_gnav_inner_link">アクセス</a></li>
 			<li><a href="" class="header_gnav_inner_link">メニュー</a></li>
 			<li><a href="" class="header_gnav_inner_link">ご予約・お問合せ</a></li>

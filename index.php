@@ -37,7 +37,7 @@
 		            <?php endif; ?>
 		            <!--ループここまで-->
 				</ul>
-				<a href="" class="go_archive_button">> お知らせをすべて見る</a>
+				<a href="<?php the_permalink(); ?>/post-archive/" class="go_archive_button">> お知らせをすべて見る</a>
 			</div>
 
 			<div class="c-section_wrap u-cf">
@@ -46,11 +46,11 @@
 					<ul>
 						<p class="campaign_day">2011.11.11</p>
 						<p class="campaign_detail">ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。</p>
-						<p class="campaign_catch"><img src="<?php echo get_template_directory_uri(); ?>/images/campaign_img_01.jpg" alt=""></p>
+						<a href="<?php the_permalink(); ?>/campaign-archive/" class="campaign_catch"><img src="<?php echo get_template_directory_uri(); ?>/images/campaign_img_01.jpg" alt=""></a>
 					</ul>
 				</div>
 
-				<a href="" class="go_archive_button">> キャンペーンをすべて見る</a>
+				<a href="<?php the_permalink(); ?>/campaign-archive/" class="go_archive_button">> キャンペーンをすべて見る</a>
 			</div>
 		</div>
 	</div>
