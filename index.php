@@ -44,10 +44,19 @@
 				<h2 class="c-sec_ttl">きまぐれ蔵人のキャンペーン</h2>
 				<div class="campaign_wrap">
 					<ul>
-						<p class="campaign_day">2011.11.11</p>
-						<p class="campaign_detail">ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。ここまでで１０文字。</p>
-						<a href="<?php the_permalink(); ?>/campaign-archive/" class="campaign_catch"><img src="<?php echo get_template_directory_uri(); ?>/images/campaign_img_01.jpg" alt=""></a>
+						
+						<?php $loop = new WP_Query(array("post_type" => "campaign", "posts_per_page" => 2 ));
+						while($loop->have_posts()): $loop->the_post(); ?>
+						<li>
+							<a href="<?php the_permalink(); ?>"  class="campaign_ttl"><?php the_title(); ?></a>
+							<p class="campaign_day"><?php echo get_the_date(); ?></p>
+							<a href="<?php the_permalink(); ?>" class="campaign_catch"><?php the_content(); ?></a>
+						</li>
+						<?php endwhile; ?>
+						
 					</ul>
+
+
 				</div>
 
 				<a href="<?php the_permalink(); ?>/campaign-archive/" class="go_archive_button">> キャンペーンをすべて見る</a>
