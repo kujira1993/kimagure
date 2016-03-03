@@ -31,16 +31,16 @@
 	<div class="header_inner u-cf">
 		<h1><a href="<?php echo home_url('/'); ?>" class="header_logo"><img src="<?php echo get_template_directory_uri(); ?>/images/header_logo.png" width="100%" height="auto"></a></h1>
 		<ul class="header_inner_sns_wrap u-cf">
-			<li><a href="" class="header_inner_sns_wrap_item btn03"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="" width="100%" height="auto"></a></li>
+			<li><a href="https://www.facebook.com/kimagurecloud/?fref=ts" class="header_inner_sns_wrap_item btn03" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="" width="100%" height="auto"></a></li>
 			<li><a href="" class="header_inner_sns_wrap_item btn03"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" alt="" width="100%" height="auto"></a></li>
 		</ul>
 	</div>
 	<div class="header_gnav u-cf">
 		<ul class="header_gnav_inner u-cf">
 			<li><a href="<?php echo home_url('/'); ?>" class="header_gnav_inner_link">トップ</a></li>
-			<li><a href="" class="header_gnav_inner_link">アクセス</a></li>
-			<li><a href="" class="header_gnav_inner_link">メニュー</a></li>
-			<li><a href="" class="header_gnav_inner_link">ご予約・お問合せ</a></li>
+			<li><a href="<?php echo home_url('/'); ?>/access/" class="header_gnav_inner_link">アクセス</a></li>
+			<li><a href="<?php echo home_url('/'); ?>/menu/" class="header_gnav_inner_link">メニュー</a></li>
+			<li><a href="<?php echo home_url('/'); ?>/contact/" class="header_gnav_inner_link">ご予約・お問合せ</a></li>
 		</ul>
 	</div>
 </div>

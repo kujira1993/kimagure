@@ -603,7 +603,7 @@ width /***/:auto;　
 	/* page */
 	.menu_wrap {
 		padding: 40px 20px;
-		background-image: url(../images/menu-bg.svg);
+		background-image: url(images/menu-bg.svg);
 		width: 710px;
 		box-sizing: border-box;
     	float: left;
@@ -971,7 +971,6 @@ width /***/:auto;　
 
 	.sidebar_sns_wrap {
 		width: 100%;
-		height: 280px;
 		text-align: center;
 	}
 
@@ -1024,7 +1023,7 @@ width /***/:auto;　
 
 	.menu_wrap {
 		padding: 20px 10px;
-		background-image: url(../images/menu-bg.svg);
+		background-image: url(images/menu-bg.svg);
 		width: 100%;
 		box-sizing: border-box;
     	float: left;

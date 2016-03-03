@@ -31,13 +31,12 @@ get_header(); ?>
 			</li>
 			<?php endwhile; ?>
 			<!--ループここまで-->
+			<!--ページネーション-->
 			<?php if (function_exists('responsive_pagination')) {
 			  responsive_pagination($additional_loop->max_num_pages);
 			} ?>
 		</ul>
-		<!--ページネーション-->
-		
-		
+
 	</ul>
 
 	</div>

@@ -3,10 +3,11 @@
 			<ul class="side_item">
 				<li><img src="<?php echo get_template_directory_uri(); ?>/images/side-banner-01.jpg" width="100%" height="auto"></li>
 				<li><img src="<?php echo get_template_directory_uri(); ?>/images/side-banner-02.jpg" width="100%" height="auto"></li>
-				<li class="sidebar_sns_wrap">
-					<a class="twitter-timeline" href="https://twitter.com/DKujiraoka" data-widget-id="702351088213622784">@DKujiraokaさんのツイート</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				</li>
+				<!-- <li class="sidebar_sns_wrap">
+					<div id="pageplugin">
+						<div class="fb-page" data-href="https://www.facebook.com/kimagurecloud/?fref=ts" data-tabs="timeline" data-width="500" data-height="300" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/kimagurecloud/?fref=ts"><a href="https://www.facebook.com/kimagurecloud/?fref=ts">きまぐれ蔵人</a></blockquote></div></div>
+					</div>
+				</li> -->
 				<li><a href="https://www.facebook.com/kimagurecloud/?fref=ts" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/side-banner-03.jpg" width="100%" height="auto"></a></li>
 			</ul>
 		</div>
